@@ -16,7 +16,10 @@ const App = () => {
   ])
 
   const handleGamePlay = (index) => {
-    alert(index)
+    // alert(index)
+    let udpatedBoard = [...board]
+    udpatedBoard[index] = "🌴"
+    setBoard(udpatedBoard)
   }
 
   return (
